@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+</head>
+
+<body>
+    <h1>Formulaire de contact !</h1>
+    <form action="traitement.formulaire.php" method="POST">
+
+        <ul>
+            <li>
+                <label for="nom">Votre nom: </label>
+                <input type="text" style="width: 180px;" name="nom" id="nom"
+                    placeholder="Saisir votre nom s'il vous plaît" />
+            </li><br>
+
+            <li>
+                <label for="Prénom">Votre Prénom: </label>
+                <input type="text" style="width: 200px;" name="Prénom" id="Prénom"
+                    placeholder="Saisir votre prénom s'il vous plaît" />
+            </li><br>
+
+            <li>
+                <label for="titreMessage"> Titre du message: </label>
+                <input type="text" style="width: 230px;" name="titre" id="titre"
+                    placeholder="Saisir le titre du message s'il vous plaît" />
+            </li><br>
+
+            <li>
+                <label for="objet">Objet :</label>
+                <select id="objet" name="objet">
+                    <option value="priseDecontact">Prise de contact</option>
+                    <option value="devis">Devis</option>
+                    <option value="bugReport">Bug Report</option>
+                </select>
+            </li><br>
+
+
+            <li>
+                <textarea placeholder="Votre message..." name="message" id="message" cols="50" rows="3">Ecrivez votre message.
+            </textarea>
+            </li><br>
+
+            <li>
+                <label for="cgv">Accepter les conditions de traitement de données:</label>
+                <input type="checkbox" id="cgv" required>
+            </li><br>
+
+            <li>
+                <input type="submit" value="envoyer">
+            </li>
+    </form>
+</body><br>
+<a href="cv.html">Aller à l'exercice CV</a><br>
+<a href="calendrier.html">Aller à l'exercice Calendrier</a>
+</html>

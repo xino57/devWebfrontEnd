@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(236, 209, 209);
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+h3 {
+    color: green;
+}
+
+.texte-grand{
+    font-size: 20px;
+}
+
+#couleur-orange{
+    color: orangered;
+}
