@@ -15,18 +15,33 @@
 			4. #li4 en noir
 			5. #li5 en rouge
 			6. #li6 en violet
-
-			Attention, vous ne devez pas toucher au code HTML, ni au code CSS pré-existant.
-			l'utilisation du `!important` est interdite, sauf dans un des cas.
-
 		*/
 
 		/* ecrire vos style ici */
+    ul li {
+      color: blue;
+    }
+
+    body div ul li#li2 {
+      color: gray;
+    }
+    
+    div li.liste {
+      color: green;
+    } 
+
+    div li.liste + li {
+      color: black;
+    }
+
+    #li5 {
+      color: red !important;
+    }
+		ul > li#li6 {
+      color: purple;
+    }
 
 
-
-
-		
 		/** ne plus rien modifier en dessous **/
 		li {
 			color: green;

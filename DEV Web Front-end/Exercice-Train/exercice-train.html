@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice Train</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .scene {
+      position: relative;
+      margin: 0px auto;
+      width: 1440px;
+      height: 967px;
+      overflow: hidden;
+      
+    }
+
+    .fond {
+      position: absolute;
+      top: -2px;
+      margin-left: 9px;
+      background: url('imgs/bg.jpg') no-repeat;
+      width: 1440px;
+      height: 900px
+    }
+
+    .cloud1 {
+      position: absolute;
+      top: 17px;
+      margin-left: 505px;
+      background: url('imgs/cloud-xxl.png') no-repeat;
+      width: 1036px;
+      height: 713px
+    }
+
+    .cloud2 {
+      position: absolute;
+      top: 177px;
+      margin-left: 988px;
+      background: url('imgs/cloud-md.png') no-repeat;
+      width: 724px;
+      height: 480px
+    }
+
+    .bird {
+      position: absolute;
+      top: 270px;
+      margin-left: 1084px;
+      ;
+      background: url('imgs/birds-2.png') no-repeat;
+      width: 98px;
+      height: 72px
+    }
+
+    .bird-2 {
+      position: absolute;
+      top: 82px;
+      margin-left: 515px;
+      background: url('imgs/birds.png') no-repeat;
+      width: 159px;
+      height: 108px
+    }
+
+    .city {
+      position: absolute;
+      top: 462px;
+      margin-left: -323px;
+      background: url('imgs/city-ap.png') no-repeat;
+      width: 3061px;
+      height: 274px;
+
+    }
+
+    /* exemple avec le train */
+    .train {
+      position: absolute;
+      bottom: 72px;
+      left: -2100px;
+      background: url('imgs/train.png') no-repeat;
+      width: 3061px;
+      height: 274px;
+    }
+
+    .arbreRight {
+      position: absolute;
+      background: url('imgs/arbres-droite.png') no-repeat;
+      top: 511px;
+      left: 1029px;
+      width: 500px;
+      height: 458px;
+    }
+
+    .ground {
+      position: absolute;
+      background: url('imgs/ground.png') no-repeat;
+      top: 520px;
+      left: -977px;
+      width: 3911px;
+      height: 720px;
+    }
+
+    .station {
+      position: absolute;
+      background: url('imgs/station-characters.png') no-repeat;
+      top: 504px;
+      left: -46px;
+      width: 809px;
+      height: 424px;
+    }
+
+    .rails {
+      position: absolute;
+      background: url('imgs/rails.png') no-repeat;
+      top: 778px;
+      left: -240px;
+      width: 3712px;
+      height: 34px;
+    }
+
+    .smoke{
+      position: absolute;
+      background: url('imgs/smoke.png') no-repeat;
+      top: 210px;
+      left: 656px;
+      width: 360px;
+      height: 420px;
+
+
+
+    }
+
+    .sun{
+      background-color: rgb(250, 249, 216);
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: -9px;
+      left: 640px;
+      border-radius: 60%;
+    }
+
+
+
+    /* comme le train, continuer à placer le plus fidèlement possible, les éléments de l'illustration dans le code HTML et dans la css, pour reproduire la scène */
+  </style>
+</head>
+
+<body>
+  <main class="scene">
+    <div class="fond"></div>
+    <div class="sun"></div>
+    <div class="ground"></div>
+    <div class="city"></div>
+    <div class="rails"></div>
+    <div class="train"></div>
+    <div class="station"></div>
+    <div class="arbreRight"></div>
+    <div class="bird-2"></div>
+    <div class="cloud1"></div>
+    <div class="cloud2"></div>
+    <div class="bird"></div>
+    <div class="smoke"></div>
+   
+
+
+    </div>
+  </main>
+</body>
+
+</html>
