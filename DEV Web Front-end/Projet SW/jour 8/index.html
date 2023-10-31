@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header, footer {
+      background-color: cyan;
+      height: 200px;
+      display: flex;
+      align-items: center;
+    }
+
+    main {
+      background-color: lightgoldenrodyellow;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      padding: 10px 20px;
+    }
+
+    .main-header {
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .main-nav {
+      margin-left: auto;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+    }
+
+    .menu li {
+      margin-right: 20px;
+    }
+
+
+    /* à l'aide de conteneurs flexs, réaliser la disposition suivante::after
+    
+    - le header et le footer doivent avoir une hauteur de 200px;
+    - le main doit avoir le reste de la hauteur de fenêtre (çàd occuper tout l'écran moins la hauteur du header, footer)
+    - styler le bouton et le centrer verticalement et horizontalement dans son conteneur
+
+    - Réaliser un menu horizontal avec la navigation
+    - Disposer le title horizontalement à gauche, la navigation à droite, le tout centré verticalement dans le header
+    */
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="title">Ma compagnie</h1>
+    <nav class="main-nav">
+      <ul class="menu">
+        <li><a href="#">Lien 1</a></li>
+        <li><a href="#">Lien 2</a></li>
+        <li><a href="#">Lien 3</a></li>
+        <li><a href="#">Lien 4</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div>
+        <button>Mon bouton</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    © 2023 - MNS CSS Flex
+  </footer>
+</body>
+</html>

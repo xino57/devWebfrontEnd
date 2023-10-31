@@ -1,0 +1,64 @@
+<!-- exercice styler les lis qui sont dans .main pour leur donner l'aspect de block, avec 10px de paffing et une couleur d'arrière plan orange. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sélecteurs avancés en CSS</title>
+  <style>
+    .container {}
+    .header {}
+
+    .main .list li{
+        display: block;
+        padding: 10px;
+        background: linear-gradient(to left, lime, lime 28px, red 77%, cyan);
+        margin-bottom: 10px;
+        border-radius: 15px;
+        border: 3px solid black;
+    }
+    /* je veux différencier le rendu graphique des 2 listes qui se trouvent dans le header et dans main */
+    /* ici toutes les listes sont visées */
+    .list {
+      list-style-type: none;
+      padding: 15px;
+    }
+
+    .header .list li {
+      display: inline-block;
+      padding: 10px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="header">
+      <h1>Titre de la page</h1>
+      <ul class="list">
+        <li>liste élément 1</li>
+        <li>liste élément 2</li>
+        <li>liste élément 3</li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2>titre 1</h2>
+      <p>paragraphe 1</p>
+      <h2>titre 2</h2>
+      <p>paragraphe 2</p>
+      <p>paragraphe 3</p>
+      <p>paragraphe 4</p>
+
+      <ul class="list">
+        <li>liste élément 1</li>
+        <li>liste élément 2</li>
+        <li>liste élément 3</li>
+        <li>liste élément 4</li>
+        <li>liste élément 5</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

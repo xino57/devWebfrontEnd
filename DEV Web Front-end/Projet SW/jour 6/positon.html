@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postions</title>
+
+    <style>
+
+        .container{
+            position: relative;
+            background-color: lightcyan;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+        }
+
+        .boxStatic{
+            position: static;
+        }
+
+        .boxRelative{
+            position: relative;
+            top: -50px;
+            left: 100px;
+            background-color: lightgreen;
+            /* right: 0;
+            bottom: 0;
+            z-index: 1; */
+        }
+
+        .boxAbsolute{
+            position: absolute;
+            top: -20px;
+            right: 100px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .boxFixed{
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .mooveMe{
+            position: relative;
+            top: -10px;
+            left: 10px;
+            background-color: lightpink;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>postions</h1>
+    <div class="container">
+        <div class="box boxStatic">Box static ici</div>
+        <div class="box boxRelative">Box relative ici</div>
+        <div class="box boxAbsolute">Box absolute ici</div>
+        <div class="box boxFixed">Box fixed ici</div>
+        <p>
+            <span class="mooveMe">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius eligendi adipisci ipsum quia rem consectetur
+            reprehenderit distinctio atque. Aliquam dignissimos laboriosam minima? Earum itaque ipsum temporibus tempora
+            ut recusandae esse!</span>
+        </p>
+    </div>
+</body>
+
+</html>

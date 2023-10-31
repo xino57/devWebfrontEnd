@@ -1,0 +1,29 @@
+.Titre1{
+    font: size 60px;
+    font-family: 'Fuggles', cursive;
+    background: linear-gradient(10deg, blue, pink);
+    
+}
+
+.Titre2{
+    font-family: 'Martian Mono', monospace;
+}
+
+.p1{
+    font-family: 'Black Ops One', cursive;
+    font-size: 50px;
+    background: linear-gradient(to left, lime, lime 28px, red 77%, cyan);
+}
+
+
+/* définir une nouvelle pollcie avec un fichier externe*/
+
+@font-face{
+     font-family: 'NouvellePolice';  /* donner un nom à ça Police*/
+    src: url("BERNHC.TTF");  /*le chemin de la police*/
+}
+
+/* On chosit notre nouvelle Police */
+.Titre3{
+    font-family: "NouvellePolice";
+}

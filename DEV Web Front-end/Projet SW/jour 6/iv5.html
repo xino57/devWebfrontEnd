@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mon premier layout</title>
+
+    <!-- ecrire vos styles dans la feuille de style suivante -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- 
+
+		énoncé :
+		======
+		* réaliser un layout avec les propriétés CSS: float, display, clear
+		* créer un header avec la balise <header></header>
+		* dans le header, créer une <nav> avec un <ul> et 4 <li> contenant des liens
+		* réaliser une navigation horizontale
+		* sous le header ajouter une <section></section>
+		* contenu de la section : 
+		  - une balise <article>contenu de votre choix</article>
+		  - une balise <aside>contenu de votre choix</aside>
+		* sous la section ajouter un <footer>contenu de votre choix</footer>
+
+		* dans la section, l'article et l'aside doivent former 2 colonnes (flottant)
+		 - article: largeur 70%
+		 - aside: largeur 30%
+
+		* le header et le footer devront avoir la hauteur de 150px (avec une couleur d'arrière plan pour les distinguer).
+
+	-->
+    <style>
+        body {
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			height: 150px;
+			background-color: #3498db;
+		}
+
+		nav ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		nav li {
+			display: inline;
+			margin-right: 20px;
+		}
+
+		section {
+			clear: both;
+			margin-top: 20px;
+		}
+
+        .float-right {
+            float: right;
+            margin: 10px;
+            background-color: blue;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        article {
+			width: 70%;
+			float: left;
+		}
+
+		aside {
+			width: 30%;
+			float: left;
+		}
+
+        footer {
+			height: 150px;
+			background-color: #3498db;
+			clear: both;
+		}
+    </style>
+
+    <header class="float-left">
+        <nav>
+            <ul>
+                <li><a href="#Article1">Article1</a></li>
+                <li><a href="#Article2">Article2</a></li>
+                <li><a href="#Article3">Article3</a></li>
+                <li><a href="#Article4">Article4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>
+            <h2 class>Premier Article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse necessitatibus repellat, neque, natus
+                pariatur modi expedita, dolorum reiciendis dicta quas blanditiis animi autem laboriosam reprehenderit
+                officia provident commodi at non.</p>
+            <aside>
+                <h4>Titre de l'aside</h4>
+                <p>le contenue de l'aside</p>
+            </aside>
+    </section>
+    <footer>
+        <h4>Titre</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic omnis odio? Voluptates vitae sequi,
+            provident repudiandae id eum ducimus debitis sit iste cupiditate temporibus molestiae voluptatem totam
+            suscipit ex!</p>
+    </footer>
+    </article>
+</body>
+
+</html>

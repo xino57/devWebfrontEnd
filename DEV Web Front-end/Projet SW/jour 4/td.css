@@ -1,0 +1,50 @@
+#titre1{
+    font-size: 40 px;
+}
+
+.intro{
+    color: blue;
+    
+    
+}
+
+p{
+    font-size: 18px;
+}
+
+.intro+span{
+    color: rgb(45, 250, 45);
+}
+
+.menu{
+    font-size: 14px;
+
+}
+
+.rouge{
+    color: red;
+}
+
+/* TD2 */
+
+#paragraphe{
+    border: 3px solid black;
+    background-color: red;
+    padding: 20px;
+    margin: 30px;
+    width: 50%;
+    height: 200%;
+    text-decoration: underline;
+}
+
+.image{
+    border: 3px solid black;
+    background-color: red;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: auto;
+    background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-gt3-rs-modelimage-sideshot/model/cfbb8ed3-1a15-11ed-80f5-005056bbdc38/porsche-model.png');
+    text-align: center;
+}

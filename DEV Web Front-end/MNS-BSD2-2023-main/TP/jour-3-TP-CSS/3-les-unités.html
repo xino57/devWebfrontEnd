@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les unités en CSS</title>
+  <style>
+
+    /* les valeurs de couleur: */
+    .ma-couleur {
+      color: #FFAA11; /* hexadécimal */
+      color: #0FD; /* hexadécimal court (utilisé quand les valeurs sont répétées #00FFDD; devient #0FD; ) */
+      color: rgb(200, 50, 20); /* rgb (vert, rouge, bleu, 3 valeurs de 0 à 255) */
+      color: rgba(100, 100, 255, 0.5); /* rgba, même chose que rgb, mais avec de la transparence (un flottant de 0 à 1 exemple 0.5 est transparent à 50%) */
+    }
+
+    html, body {
+      /* ici on définit la taille de la racine du document */
+      font-size: 20px;
+    }
+
+    .mon-texte {
+      font-size: 20px; /* pixel */
+      /* em: taille proportionelle à l'élément parent */
+      font-size: 2em;
+      font-size: 80%; /* pourcentage par rapport à la taille du parent */
+    }
+    .mon-texte span {
+      /* em: taille proportionelle à l'élément root (html) */
+      font-size: 2rem;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <h1>Les unités</h1>
+  <p class="ma-couleur">Voir les couleurs dans les styles...</p>
+  
+  <p class="mon-texte">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam vero quam, dolore cum, tempora totam illum, <span>test de em</span>consequuntur deleniti natus officiis est! Nesciunt labore rerum obcaecati, itaque eos iusto dignissimos iure.</p>
+
+</body>
+</html>
