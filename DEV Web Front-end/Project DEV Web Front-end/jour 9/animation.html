@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation CSS</title>
+    <style>
+        .box{
+            background-color: tomato;
+            width: 200px;
+            height: 200px;
+            transition-duration: 1, .4s; /*la durée de transition*/
+            transition-property: width; /*proprieté visé par la transition*/
+            transition-timing-function: ease; /*fonction courbe (courbe mathématique)*/
+            transition-delay: .5s;
+            /*property duration-delai ease*/
+            transition: width 1s .5s ease;
+            /* transition-timing-function: ease-in-out;  */
+            /* transition-delay: 0, .4s; */
+            /* ease, ease-in, ease-out, ease-in-out, cubic bezier */
+        }
+
+        .box:hover{
+            width: 400px;
+            opacity: .6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+
+    <h2>La propriété transition</h2>
+    <div class="box"></div>
+    
+</body>
+</html>
