@@ -1,0 +1,39 @@
+:root {
+    --bs-danger: #e74c3c
+}
+
+.main-footer{
+    position: relative;
+    padding: 80px 0;
+    border: 1px solid red;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0px 4px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .circle-top {
+    position: absolute;
+    top: -27px;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 24px;
+    background-color: #e74c3c;
+  }
+  .circle-facebook {
+    background-color: #3B5998;
+  }
+  .circle-youtube {
+    background-color: #e74c3c;
+  }
+  .circle-instagram {
+    background-color: #FF006C;
+  }
