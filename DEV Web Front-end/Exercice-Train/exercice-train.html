@@ -49,26 +49,7 @@
       width: 724px;
       height: 480px
     }
-
-    .bird {
-      position: absolute;
-      top: 270px;
-      margin-left: 1084px;
-      ;
-      background: url('imgs/birds-2.png') no-repeat;
-      width: 98px;
-      height: 72px
-    }
-
-    .bird-2 {
-      position: absolute;
-      top: 82px;
-      margin-left: 515px;
-      background: url('imgs/birds.png') no-repeat;
-      width: 159px;
-      height: 108px
-    }
-
+    
     .city {
       position: absolute;
       top: 462px;
@@ -87,7 +68,9 @@
       background: url('imgs/train.png') no-repeat;
       width: 3061px;
       height: 274px;
+      animation: deplacementTrain 3s; 
     }
+
 
     .arbreRight {
       position: absolute;
@@ -125,20 +108,8 @@
       height: 34px;
     }
 
-    .smoke {
-      position: absolute;
-      background: url('imgs/smoke.png') no-repeat;
-      top: 210px;
-      left: 656px;
-      width: 360px;
-      height: 420px;
-
-
-
-    }
-
     .sun {
-      background-color: rgb(250, 249, 216);
+      background-color: rgb(255 249 216/ 50%);
       width: 300px;
       height: 300px;
       position: absolute;
@@ -147,43 +118,110 @@
       border-radius: 60%;
     }
 
-    .maintain {
-      position: absolute;
-      background: url('imgs/bg-mountains.png') no-repeat;
-      top: 210px;
-      left: 656px;
-      width: 360px;
-      height: 420px;
-
-
-
-    }
-
-    .birds {
+    .birdsAnime {
       position: absolute;
       top: 100px;
-      left: 550px;
-      transform: translate(-20%, -20%);
+      margin-left: 515px;
+      transform: translate(-50%, -50%);
       background: url('imgs/bonus-animations/bird-anim-1.png');
       background-repeat: no-repeat;
       background-position: 0 0;
-      /* You may need to adjust this value */
-      animation: birds 3s steps(3) infinite;
+      animation: birdsAnime 2s steps(3) infinite;
       width: 80px;
       height: 54px;
     }
 
-    @keyframes birds {
+    @keyframes birdsAnime {
       from {
         background-position: 0 0;
       }
 
       to {
-        background-position: -384px 0;
-        /* Adjusted background-position value */
+        background-position: -200px 0;
+        
       }
     }
 
+    .birdsAnime-2 {
+      position: absolute;
+      top: 270px;
+      margin-left: 1084px;
+      transform: translate(-50%, -50%);
+      background: url('imgs/bonus-animations/bird-anim-2.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      animation: birdsAnime-2 4s steps(3) infinite;
+      width: 80px;
+      height: 54px;
+    }
+
+    @keyframes birdsAnime-2 {
+      from {
+        background-position: 0 0;
+      }
+
+      to {
+        background-position: -200px 0;
+        
+      }
+    }
+
+    .smokeAnime {
+  position: absolute;
+  top: 200px;
+  margin-left: 650px;
+  transform: translate(0);
+  background: url('imgs/bonus-animations/smoke.webp');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  animation: smokeAnime 1.5s infinite linear;
+  width: 360px;
+  height: 420px;
+}
+
+@keyframes smokeAnime {
+  0% {
+    opacity: 1; /* Opacité initiale */
+    transform: translateX(0) translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-100px) translateY(-20px); 
+  }
+  40% {
+    opacity: 0.6;
+    transform: translateX(-200px) translateY(-40px);
+  }
+  60% {
+    opacity: 0.3;
+    transform: translateX(-300px) translateY(-60px);
+  }
+  80% {
+    opacity: 0.1;
+    transform: translateX(-400px) translateY(-80px);
+  }
+  100% {
+    opacity: 0; /* Opacité finale */
+    transform: translateX(-500px) translateY(-100px); /* Déplacement horizontal */
+  }
+}
+
+
+@keyframes deplacementTrain {
+      0% {
+        left: -2100px;
+        bottom: 72px;
+        animation-timing-function: ease-in;
+      }
+      70% {
+        left: 70%;
+        animation-timing-function: linear;
+      }
+      100% {
+        left: 200%;
+        animation-timing-function: ease-out;
+      }
+    }
 
 
     /* comme le train, continuer à placer le plus fidèlement possible, les éléments de l'illustration dans le code HTML et dans la css, pour reproduire la scène */
@@ -193,9 +231,7 @@
 <body>
   <main class="scene">
     <div class="fond"></div>
-    <div class="sun"></div>
     <div class="ground"></div>
-    <div class="maintain"></div>
     <div class="city"></div>
     <div class="rails"></div>
     <div class="train"></div>
@@ -203,13 +239,12 @@
     <div class="arbreRight"></div>
     <div class="cloud1"></div>
     <div class="cloud2"></div>
-    <div class="bird"></div>
+    <div class="sun"></div>
     <div class="smoke"></div>
-    <div class="birds"></div>
-
-
-
-    </div>
+    <div class="birdsAnime-2"></div>
+    <div class="birdsAnime"></div>
+    <div class="smokeAnime"></div>
+    <div class="deplacementTrain"></div>
   </main>
 </body>
 
