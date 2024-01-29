@@ -8,3 +8,7 @@
   src: url('pontiac-black.otf');
   font-weight: bold;
 }
+@font-face{
+  font-family: 'Pontiac light';
+  src: url('pontiac-light.otf');
+}
