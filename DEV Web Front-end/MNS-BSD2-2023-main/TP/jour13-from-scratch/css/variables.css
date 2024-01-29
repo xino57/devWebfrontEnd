@@ -43,3 +43,8 @@
   --bs-btn-disabled-bg: #2C3E50;
   --bs-btn-disabled-border-color: #2C3E50;
 }
+
+.btn-info{
+  --bs-btn-color: white;
+  --bs-btn-bg: #3498DB;
+}
